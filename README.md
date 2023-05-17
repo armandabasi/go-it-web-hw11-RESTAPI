@@ -1,30 +1,32 @@
-Домашнє завдання #11
-Мета цього домашнього завдання — створити REST API для зберігання та управління контактами. API повинен бути побудований з використанням інфраструктури FastAPI та використовувати SQLAlchemy для управління базою даних.
+# Homework Assignment #11
 
-Контакти повинні зберігатися в базі даних та містити в собі наступну інформацію:
-*Ім'я
-*Прізвище
-*Електронна адреса
-*Номер телефону
-*День народження
-*Додаткові дані (необов'язково)
+The goal of this homework assignment is to create a REST API for storing and managing contacts. The API should be built using FastAPI framework and utilize SQLAlchemy for database management.
 
-API повинен мати можливість виконувати наступні дії:
-*Створити новий контакт
-*Отримати список всіх контактів
-*Отримати один контакт за ідентифікатором
-*Оновити існуючий контакт
-*Видалити контакт
+Contacts should be stored in the database and contain the following information:
+- First Name
+- Last Name
+- Email
+- Phone Number
+- Birthday
+- Additional Data (optional)
 
-На придачу до базового функціоналу CRUD API також повинен мати наступні функції:
-*Контакти повинні бути доступні для пошуку за іменем, прізвищем чи адресою електронної пошти (Query).
-*API повинен мати змогу отримати список контактів з днями народження на найближчі 7 днів.
+The API should have the following functionalities:
+- Create a new contact
+- Get a list of all contacts
+- Get a contact by identifier
+- Update an existing contact
+- Delete a contact
 
-Загальні вимоги
-*Використання фреймворку FastAPI для створення API
-*Використання ORM SQLAlchemy для роботи з базою даних
-*В якості бази даних слід використовувати PostgreSQL.
-*Підтримка CRUD операцій для контактів
-*Підтримка зберігання дати народження контакту
-*Надання документів для API
-*Використання модуля перевірки достовірності даних Pydantic
+In addition to the basic CRUD functionalities, the API should also have the following features:
+- Contacts should be searchable by name, last name, or email address (Query).
+- The API should be able to retrieve a list of contacts with birthdays in the next 7 days.
+
+General Requirements:
+- Use the FastAPI framework to create the API.
+- Use the SQLAlchemy ORM for working with the database.
+- Use PostgreSQL as the database.
+- Support CRUD operations for contacts.
+- Support storing the contact's birthday.
+- Provide documentation for the API.
+- Use the Pydantic data validation module.
+
